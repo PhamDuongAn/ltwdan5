@@ -1,0 +1,1024 @@
+﻿<link href="../css/categorycss.css" rel="stylesheet" />
+<link href="../danjs/catee.js" rel="javascript" />
+@{
+    ViewBag.Title = "category4";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5a10d2;
+            margin: 0;
+            padding: 0;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dmsp-banerud">
+        <!-- Top Banner -->
+        <img class="img1" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangMGG_1124_1920x450.png" alt="banner">
+        <br>
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangMGG_1124_tag1.png" alt="banner">
+        <br />
+        <!-- Voucher Codes -->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">Giảm 20K phí vận chuyển</p>
+                    <p>ĐH từ 200K</p>
+                    <p>  NHẬP MÃ NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress1" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText1" class="voucher-text">
+                            <strong id="voucherCount1">0</strong> 
+                        </div>
+                    </div>
+                    <p class="soldflss" style="margin-top:45px;width:100%"></p>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:85%;margin-top:0;">11/11/2024 15:00</p>
+                    <button id="useVoucherButton1" onclick="useVoucher1()" class="expired">Hết mã</button>
+                    <button class="expired-2">Chi Tiết thể lệ</button>
+                </div>
+                
+        <script>
+            // Số lượng voucher ban đầu
+            let voucherCount1 = 0;
+            const totalVouchers1 = 0;
+            
+            function updateVoucherDisplay1() {
+                const voucherCountElement = document.getElementById('voucherCount1');
+                const voucherProgress = document.getElementById('voucherProgress1');
+                const voucherText = document.getElementById('voucherText1');
+                const useVoucherButton = document.getElementById('useVoucherButton1');
+    
+                // Cập nhật số lượng voucher còn lại
+                voucherCountElement.textContent = voucherCount1;
+    
+                // Cập nhật thanh tiến độ
+                const progressWidth = (voucherCount1 / totalVouchers1) * 100;
+                voucherProgress.style.width = progressWidth + '%';
+    
+                // Cập nhật thông báo khi hết voucher
+                if (voucherCount1 <= 0) {
+                    voucherText.textContent = 'Bạn đã hết voucher!';
+                    useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                }
+            }
+    
+            function useVoucher1() {
+                if (voucherCount1 > 0) {
+                    voucherCount1--;  // Giảm số lượng voucher
+                    updateVoucherDisplay1();  // Cập nhật lại giao diện
+                }
+            }
+    
+            // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+            updateVoucherDisplay1();
+        </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">Giảm 15K phí vận chuyển</p>
+                    <p>ĐH từ 150K</p>
+                    <p>  NHẬP MÃ NGAY</p><div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress2" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText2" class="voucher-text">
+                            <strong id="voucherCount2">0</strong> 
+                        </div>
+                    </div>
+                    <p class="soldflss" style="margin-top:45px;width:100%"></p>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:85%;margin-top:0;">11/11/2024 15:00</p>
+                    <button id="useVoucherButton2" onclick="useVoucher2()" class="expired" >Hết mã</button>
+                    <button class="expired-2">Chi Tiết thể lệ</button>
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount2 = 0;
+                    const totalVouchers2 = 0;
+                    
+                    function updateVoucherDisplay2() {
+                        const voucherCountElement = document.getElementById('voucherCount2');
+                        const voucherProgress = document.getElementById('voucherProgress2');
+                        const voucherText = document.getElementById('voucherText2');
+                        const useVoucherButton = document.getElementById('useVoucherButton2');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount2;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount2 / totalVouchers2) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount2 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher2() {
+                        if (voucherCount2 > 0) {
+                            voucherCount2--;  // Giảm số lượng voucher
+                            updateVoucherDisplay2();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay2();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 110K</p>
+                    <p>ĐH từ 111K</p>
+                    <p>NHẬP MÃ NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress3" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText3" class="voucher-text">
+                            <strong id="voucherCount3">0</strong> 
+                        </div>
+                    </div>
+                    <p class="soldflss" style="margin-top:45px;width:100%"></p>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">11/11/2024 19:00</p>
+                    <button id="useVoucherButton3" onclick="useVoucher3()" class="expired" >Hết mã</button>                    
+                    <button class="expired-2">Chi Tiết thể lệ</button>
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount3 = 0;
+                    const totalVouchers3 = 0;
+                    
+                    function updateVoucherDisplay3() {
+                        const voucherCountElement = document.getElementById('voucherCount3');
+                        const voucherProgress = document.getElementById('voucherProgress3');
+                        const voucherText = document.getElementById('voucherText3');
+                        const useVoucherButton = document.getElementById('useVoucherButton3');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount3;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount3 / totalVouchers3) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount3 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher3() {
+                        if (voucherCount3 > 0) {
+                            voucherCount3--;  // Giảm số lượng voucher
+                            updateVoucherDisplay3();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay3();
+                </script>
+            </div>
+            <br />
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 10K</p>
+                    <p>ĐH từ 11K</p>
+                    <p>NHẬP MÃ NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress4" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText4" class="voucher-text">
+                            <strong id="voucherCount4">25</strong> 
+                        </div>
+                    </div>
+                    <p class="soldflss" style="margin-top:45px;width:100%"></p>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">11/11/2024 19:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHSI3WKDDAY11</p>
+                    <button id="useVoucherButton4" onclick="useVoucher4()" class="expired" >Hết mã</button>
+                    <button class="expired-2">Chi Tiết thể lệ</button>
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount4 = 25;
+                    const totalVouchers4 = 25;
+                    
+                    function updateVoucherDisplay4() {
+                        const voucherCountElement = document.getElementById('voucherCount4');
+                        const voucherProgress = document.getElementById('voucherProgress4');
+                        const voucherText = document.getElementById('voucherText4');
+                        const useVoucherButton = document.getElementById('useVoucherButton4');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount4;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount4 / totalVouchers4) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount4 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher4() {
+                        if (voucherCount4 > 0) {
+                            voucherCount4--;  // Giảm số lượng voucher
+                            updateVoucherDisplay4();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay4();
+                </script>
+            </div>
+        </div>
+        <!-------------------->
+        <br />
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangMGG_1124_tag2.png" alt="banner">
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 20K</p>
+                    <p>Đơn hàng mua Sách Thiếu Nhi từ 210K</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress5" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText5" class="voucher-text">
+                            <strong id="voucherCount5">25</strong> 
+                        </div>
+                    </div>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress5" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText5" class="voucher-text">
+                            <strong id="voucherCount5">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHSTN20T11</p>
+                    <button id="useVoucherButton5" onclick="useVoucher5()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount5 = 25;
+                    const totalVouchers5 = 25;
+                    
+                    function updateVoucherDisplay5() {
+                        const voucherCountElement = document.getElementById('voucherCount5');
+                        const voucherProgress = document.getElementById('voucherProgress5');
+                        const voucherText = document.getElementById('voucherText5');
+                        const useVoucherButton = document.getElementById('useVoucherButton5');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount5;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount5 / totalVouchers5) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount5 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher5() {
+                        if (voucherCount5 > 0) {
+                            voucherCount5--;  // Giảm số lượng voucher
+                            updateVoucherDisplay5();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay5();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 10% TỐI ĐA 30K ĐỒ CHƠI</p>
+                    <p>Đơn hàng từ 100K</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress6" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText6" class="voucher-text">
+                            <strong id="voucherCount6">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHSDC1T1124</p>
+                    <button id="useVoucherButton6" onclick="useVoucher6()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount6 = 25;
+                    const totalVouchers6 = 25;
+                    
+                    function updateVoucherDisplay6() {
+                        const voucherCountElement = document.getElementById('voucherCount6');
+                        const voucherProgress = document.getElementById('voucherProgress6');
+                        const voucherText = document.getElementById('voucherText6');
+                        const useVoucherButton = document.getElementById('useVoucherButton6');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount6;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount6 / totalVouchers6) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount6 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher6() {
+                        if (voucherCount6 > 0) {
+                            voucherCount6--;  // Giảm số lượng voucher
+                            updateVoucherDisplay6();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay6();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 20K</p>
+                    <p>Đơn hàng Ngoại Văn từ 250K</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress7" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText7" class="voucher-text">
+                            <strong id="voucherCount7">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHSTN20T11</p>
+                    <button id="useVoucherButton7" onclick="useVoucher7()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount7 = 25;
+                    const totalVouchers7 = 25;
+                    
+                    function updateVoucherDisplay7() {
+                        const voucherCountElement = document.getElementById('voucherCount7');
+                        const voucherProgress = document.getElementById('voucherProgress7');
+                        const voucherText = document.getElementById('voucherText7');
+                        const useVoucherButton = document.getElementById('useVoucherButton7');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount7;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount7 / totalVouchers7) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount7 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher7() {
+                        if (voucherCount7 > 0) {
+                            voucherCount7--;  // Giảm số lượng voucher
+                            updateVoucherDisplay7();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay7();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">Freeship 20K</p>
+                    <p>Đơn hàng mua Hàng Ngoài Sách từ 150K</p>
+                    <p> MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress8" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText8" class="voucher-text">
+                            <strong id="voucherCount8">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHSHHKT11</p>
+                    <button id="useVoucherButton8" onclick="useVoucher8()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount8 = 25;
+                    const totalVouchers8 = 25;
+                    
+                    function updateVoucherDisplay8() {
+                        const voucherCountElement = document.getElementById('voucherCount8');
+                        const voucherProgress = document.getElementById('voucherProgress8');
+                        const voucherText = document.getElementById('voucherText8');
+                        const useVoucherButton = document.getElementById('useVoucherButton8');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount8;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount8 / totalVouchers8) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount8 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher8() {
+                        if (voucherCount8 > 0) {
+                            voucherCount8--;  // Giảm số lượng voucher
+                            updateVoucherDisplay8();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay8();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 30K</p>
+                    <p>Đơn hàng mua Sách Kinh Tế từ 310K</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress9" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText9" class="voucher-text">
+                            <strong id="voucherCount9">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS10KT11</p>
+                    <button id="useVoucherButton9" onclick="useVoucher9()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount9 = 25;
+                    const totalVouchers9 = 25;
+                    
+                    function updateVoucherDisplay9() {
+                        const voucherCountElement = document.getElementById('voucherCount9');
+                        const voucherProgress = document.getElementById('voucherProgress9');
+                        const voucherText = document.getElementById('voucherText9');
+                        const useVoucherButton = document.getElementById('useVoucherButton9');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount9;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount9 / totalVouchers9) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount9 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher9() {
+                        if (voucherCount9 > 0) {
+                            voucherCount9--;  // Giảm số lượng voucher
+                            updateVoucherDisplay9();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay9();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <br />
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangMGG_1124_tag3.png" alt="banner">
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 10K</p>
+                    <p>Đơn hàng từ 130K (TOÀN SÀN)</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress10" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText10" class="voucher-text">
+                            <strong id="voucherCount10">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS10KT11</p>
+                    <button id="useVoucherButton10" onclick="useVoucher10()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>    
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount10 = 25;
+                    const totalVouchers10 = 25;
+                    
+                    function updateVoucherDisplay10() {
+                        const voucherCountElement = document.getElementById('voucherCount10');
+                        const voucherProgress = document.getElementById('voucherProgress10');
+                        const voucherText = document.getElementById('voucherText10');
+                        const useVoucherButton = document.getElementById('useVoucherButton10');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount10;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount10 / totalVouchers10) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount10 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher10() {
+                        if (voucherCount10 > 0) {
+                            voucherCount10--;  // Giảm số lượng voucher
+                            updateVoucherDisplay10();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay10();
+                </script>
+            </div>
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 25K</p>
+                    <p>Đơn hàng từ 280K (TOÀN SÀN)</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress11" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText11" class="voucher-text">
+                            <strong id="voucherCount11">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS25KT11</p>
+                    <button id="useVoucherButton11" onclick="useVoucher11()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount11 = 25;
+                    const totalVouchers11 = 25;
+                    
+                    function updateVoucherDisplay11() {
+                        const voucherCountElement = document.getElementById('voucherCount11');
+                        const voucherProgress = document.getElementById('voucherProgress11');
+                        const voucherText = document.getElementById('voucherText11');
+                        const useVoucherButton = document.getElementById('useVoucherButton11');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount11;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount11 / totalVouchers11) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount11 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher11() {
+                        if (voucherCount11 > 0) {
+                            voucherCount11--;  // Giảm số lượng voucher
+                            updateVoucherDisplay11();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay11();
+                </script>
+            </div>
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 50K</p>
+                    <p>Đơn hàng từ 550K (TOÀN SÀN)</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress12" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText12" class="voucher-text">
+                            <strong id="voucherCount12">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS50KT11</p>
+                    <button id="useVoucherButton12" onclick="useVoucher12()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount12 = 25;
+                    const totalVouchers12 = 25;
+                    
+                    function updateVoucherDisplay12() {
+                        const voucherCountElement = document.getElementById('voucherCount12');
+                        const voucherProgress = document.getElementById('voucherProgress12');
+                        const voucherText = document.getElementById('voucherText12');
+                        const useVoucherButton = document.getElementById('useVoucherButton12');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount12;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount12 / totalVouchers12) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount12 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher12() {
+                        if (voucherCount12 > 0) {
+                            voucherCount12--;  // Giảm số lượng voucher
+                            updateVoucherDisplay12();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay12();
+                </script>
+            </div>
+        </div>
+        <br /> <!-------------------->
+        <div class="voucher">
+            <div class="voucher-info">
+                <p class="info-vch">MÃ GIẢM 100K</p>
+                <p>Đơn hàng từ 1TR1 (TOÀN SÀN)</p>
+                <p>MUA NGAY</p>
+                <div class="voucher-container">
+                    <div class="voucher-bar">
+                        <div id="voucherProgress13" class="voucher-progress"></div>
+                    </div>
+                    <div style="font-size: 0;" id="voucherTex13t" class="voucher-text">
+                        <strong id="voucherCount13">25</strong> 
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+            <div class="voucher-expiry">
+                <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS100KT11</p>
+                <button id="useVoucherButton13" onclick="useVoucher13()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>            
+            </div>
+            <script>
+                // Số lượng voucher ban đầu
+                let voucherCount13 = 25;
+                const totalVouchers13 = 25;
+                
+                function updateVoucherDisplay13() {
+                    const voucherCountElement = document.getElementById('voucherCount13');
+                    const voucherProgress = document.getElementById('voucherProgress13');
+                    const voucherText = document.getElementById('voucherText13');
+                    const useVoucherButton = document.getElementById('useVoucherButton13');
+        
+                    // Cập nhật số lượng voucher còn lại
+                    voucherCountElement.textContent = voucherCount13;
+        
+                    // Cập nhật thanh tiến độ
+                    const progressWidth = (voucherCount13 / totalVouchers13) * 100;
+                    voucherProgress.style.width = progressWidth + '%';
+        
+                    // Cập nhật thông báo khi hết voucher
+                    if (voucherCount13 <= 0) {
+                        voucherText.textContent = 'Bạn đã hết voucher!';
+                        useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                    }
+                }
+        
+                function useVoucher13() {
+                    if (voucherCount13 > 0) {
+                        voucherCount13--;  // Giảm số lượng voucher
+                        updateVoucherDisplay13();  // Cập nhật lại giao diện
+                    }
+                }
+        
+                // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                updateVoucherDisplay13();
+            </script>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">FREESHIP 20K</p>
+                    <p>Áp dụng cho đơn hàng từ 250K vào các ngày D.Day 11, 15 và 25</p>
+                    <p>MUA NGAY</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress14" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText14" class="voucher-text">
+                            <strong id="voucherCount14">0</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <button id="useVoucherButton14" onclick="useVoucher14()" class="expired1" style="background-color: rgb(213, 14, 14);">Hết mã</button>              
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount14 = 25;
+                    const totalVouchers14 = 25;
+                    
+                    function updateVoucherDisplay14() {
+                        const voucherCountElement = document.getElementById('voucherCount14');
+                        const voucherProgress = document.getElementById('voucherProgress14');
+                        const voucherText = document.getElementById('voucherText14');
+                        const useVoucherButton = document.getElementById('useVoucherButton14');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount14;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount14 / totalVouchers14) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount14 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher14() {
+                        if (voucherCount14 > 0) {
+                            voucherCount14--;  // Giảm số lượng voucher
+                            updateVoucherDisplay14();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay14();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <br />
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangMGG_1124_tag4.png" alt="banner">
+        <br />
+        <!-------------------->
+        <div class="promotion-section">
+            <div class="promo-box">
+                <button style="background-color: #5a10d2;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-09-2024/BTASKEE_T09_600x350.jpg" alt="đặt sách dễ dàng hơn cùng Fahasa" /></button>
+
+                <button style="background-color: #5a10d2;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/slide_trang_600_350.png" alt="thanh toán dễ dàng ưu đãi ngập tràn" /></button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="ctncatespfl">
+            <div class="tabslider-header">
+                <div class="tabslider-title">
+                    <div style="margin-right: 8px;">
+                        <img style="width:70%;" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" class="center">
+                    </div>
+                    <span>Xu Hướng Mua Sắm</span>
+                </div>
+                <div class="ma-title">
+                    <div class="tabslider-tabs">
+                        <ul class="swiper-horizontal">
+                            <div class="swiper-wrapper">
+                                <li class="swiper-slide" rel="deal">Xu Hướng Theo Ngày</li>
+                                <li class="swiper-slide" style="color:black;font-weight:200;" rel="km">Sách HOT - Giảm Sốc</li>
+                                <li class="swiper-slide" style="color:black;font-weight:200;" rel="kmnv">Bestseller Ngoại Văn </li>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="spcate-grid">
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_56100.jpg" alt="Nước Mỹ Trong Mắt Trump - The United States Of Trump : How The President Really Sees America">
+                <p class="spcate-name">Nước Mỹ Trong Mắt Trump - The United States Of Trump : How The President Really Sees America</p>
+                <p class="pricecate"><span class="pricecate1">166.320 đ</span> <span class="discountflss">-16%</span></p>
+                <p class="old-price">198.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                    <div class="progress-text">Đã bán 135</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/1/4/1445-1018_1.jpg" alt="Hoa Học Trò - Số 1445 - Món Quà Lấp Lánh Mùa Hiến Chương Nhà Giáo Việt Nam 20/11">
+                <p class="spcate-name">Hoa Học Trò - Số 1445 - Món Quà Lấp Lánh Mùa Hiến Chương Nhà Giáo Việt Nam 20/11</p>
+                <p class="pricecate"><span class="pricecate1">19.000 đ</span> <span class="discountflss">-5%</span></p>
+                <p class="old-price">20.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-text">Sắp hết </div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/con-_ng-chuy_n-h_a--1.jpg" alt="Con Đường Chuyển Hoá - Sa Môn Thích Pháp Hòa">
+                <p class="spcate-name">Con Đường Chuyển Hoá - Sa Môn Thích Pháp Hòa</p>
+                <p class="pricecate"><span class="pricecate1">150.400 đ</span> <span class="discountflss">-20%</span></p>
+                <p class="old-price">188.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                    <div class="progress-text">Đã bán 161</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-1_65.jpg" alt="Xứ Sở Miên Man - Tặng Kèm Bookmark">
+                <p class="spcate-name">Xứ Sở Miên Man - Tặng Kèm Bookmark</p>
+                <p class="pricecate"><span class="pricecate1">187.000 đ</span> <span class="discountflss">-15%</span></p>
+                <p class="old-price">220.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-text">Đã bán 142</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_8906.jpg" alt="Máy Tính Casio FX 580 VN X">
+                <p class="spcate-name">Máy Tính Casio FX 580 VN X</p>
+                <p class="pricecate"><span class="pricecate1">669.030 đ</span> <span class="discountflss">-13%</span></p>
+                <p class="old-price">769.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-text">Sắp hết </div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_233034.jpg" alt="Đèn LED Bảo Vệ Mắt Kiêm Sạc Không Dây Taotronics 5W TT-DL057 - Màu Đen">
+                <p class="spcate-name">Đèn LED Bảo Vệ Mắt Kiêm Sạc Không Dây Taotronics 5W TT-DL057 - Màu Đen</p>
+                <p class="pricecate"><span class="pricecate1">649.000 đ</span> <span class="discountflss">-45%</span></p>
+                <p class="old-price">1.180.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                    <div class="progress-text">Sắp hết</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9780008532819.jpg" alt="Yellowface (International Edition)">
+                <p class="spcate-name">Yellowface (International Edition)</p>
+                <p class="pricecate"><span class="pricecate1">227.700 đ</span> <span class="discountflss">-10%</span></p>
+                <p class="old-price">253.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                    <div class="progress-text">Đã bán 172</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/4/8/4895232506705.jpg" alt="Ba Lô Chống Gù Eggie Schoolbag - Level Up - Go Green - Tiger Family TGEG-002A">
+                <p class="spcate-name">Ba Lô Chống Gù Eggie Schoolbag - Level Up - Go Green - Tiger Family TGEG-002A</p>
+                <p class="pricecate"><span class="pricecate1">1.225.000 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-price">1.750.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                    <div class="progress-text">Đã bán 86</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_ban-dac-biet_bia_obi_tap-104-1-2.jpg" alt="Combo Manga - Thám Tử Lừng Danh Conan - Tập 104 - Bản Thường + Bản Đặc Biệt (Bộ 2 Cuốn) - Tặng Kèm Obi + Bộ Sưu Tập Card Bảng Phân Cảnh Movie Tàu Ngầm Sắt Màu Đen">
+                <p class="spcate-name">Combo Manga - Thám Tử Lừng Danh Conan - Tập 104 - Bản Thường + Bản Đặc Biệt (Bộ 2 Cuốn) - Tặng Kèm Obi + Bộ Sưu Tập Card Bảng Phân Cảnh Movie Tàu Ngầm Sắt Màu Đen</p>
+                <p class="pricecate"><span class="pricecate1">76.000 đ</span> <span class="discountflss">-5%</span></p>
+                <p class="old-price">80.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 5%;"></div>
+                    <div class="progress-text">Đã bán 37</div>
+                </div>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/c/a/casio-fx-580vn-x-xanh-body-1-dd.jpg" alt="Máy Tính Casio FX580VN X-BU (Màu Xanh)">
+                <p class="spcate-name">Máy Tính Casio FX580VN X-BU (Màu Xanh)</p>
+                <p class="pricecate"><span class="pricecate1">669.030 đ</span> <span class="discountflss">-13%</span></p>
+                <p class="old-price">769.000 đ</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-text">Sắp hết </div>
+                </div>
+            </div>
+        </div>
+        <div class="viewmore">
+            <button class="view-more-spcate">Xem Thêm</button>
+        </div>
+    </div>
+    <!-------------------->
+    <br />
+    </div>
+</body>
+</html>
+
+
+
+

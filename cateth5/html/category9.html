@@ -1,0 +1,788 @@
+﻿<link href="../css/categorycss.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "category9";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Page</title>
+    <style>
+        body {
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #daf1ff;
+            margin: 0;
+            padding: 0;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="snowflakeContainer">
+        <p class="snowflake" style="opacity: 0.227673; font-size: 57.2989px; transform: translate3d(320px, 662px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.881392; font-size: 22.3309px; transform: translate3d(169px, -21px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.289035; font-size: 44.5326px; transform: translate3d(199px, 150px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.318369; font-size: 35.3589px; transform: translate3d(467px, 445px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.847096; font-size: 24.9113px; transform: translate3d(673px, 403px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.530921; font-size: 18.838px; transform: translate3d(152px, 57px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.657191; font-size: 24.3482px; transform: translate3d(599px, 608px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.53168; font-size: 40.1887px; transform: translate3d(338px, 627px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.178992; font-size: 15.0556px; transform: translate3d(592px, 520px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.187648; font-size: 28.3426px; transform: translate3d(218px, 18px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.100925; font-size: 41.402px; transform: translate3d(225px, 192px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.979181; font-size: 26.9978px; transform: translate3d(-162px, 69px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 1.09209; font-size: 45.2168px; transform: translate3d(17px, 53px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.752392; font-size: 48.5783px; transform: translate3d(329px, 296px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.844116; font-size: 60.1956px; transform: translate3d(775px, 455px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.74782; font-size: 24.8906px; transform: translate3d(782px, 87px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.660556; font-size: 29.6936px; transform: translate3d(264px, 340px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.886581; font-size: 53.9631px; transform: translate3d(818px, 372px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.843452; font-size: 15.0445px; transform: translate3d(763px, 244px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.967723; font-size: 44.9796px; transform: translate3d(1021px, 523px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.407292; font-size: 15.7491px; transform: translate3d(473px, 511px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.987169; font-size: 49.228px; transform: translate3d(603px, 51px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.611664; font-size: 34.9169px; transform: translate3d(249px, 548px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.450439; font-size: 16.1572px; transform: translate3d(781px, 254px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.50624; font-size: 49.7689px; transform: translate3d(118px, 27px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.665521; font-size: 47.9155px; transform: translate3d(177px, 124px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.274024; font-size: 15.3759px; transform: translate3d(664px, 263px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.193765; font-size: 41.2252px; transform: translate3d(-131px, 570px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.610135; font-size: 58.3696px; transform: translate3d(499px, -8px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.312355; font-size: 54.5336px; transform: translate3d(57px, 312px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.759252; font-size: 48.0719px; transform: translate3d(355px, 384px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.344128; font-size: 61.0124px; transform: translate3d(52px, 281px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.190807; font-size: 40.1961px; transform: translate3d(-93px, 208px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 1.0718; font-size: 59.5739px; transform: translate3d(440px, 634px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.210859; font-size: 46.4813px; transform: translate3d(-55px, 382px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.115701; font-size: 59.1495px; transform: translate3d(787px, 456px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.365749; font-size: 49.5771px; transform: translate3d(219px, 221px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.217483; font-size: 60.0842px; transform: translate3d(592px, 626px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.483264; font-size: 45.3932px; transform: translate3d(844px, -22px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.896871; font-size: 58.9765px; transform: translate3d(731px, 196px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.134793; font-size: 62.6577px; transform: translate3d(1071px, -5px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.806235; font-size: 45.595px; transform: translate3d(516px, -47px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.621978; font-size: 33.0727px; transform: translate3d(-51px, 61px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.624042; font-size: 25.6517px; transform: translate3d(374px, 75px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.408742; font-size: 62.4254px; transform: translate3d(151px, 267px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.227653; font-size: 29.0494px; transform: translate3d(76px, 20px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.804516; font-size: 45.2497px; transform: translate3d(497px, 687px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.445258; font-size: 42.0865px; transform: translate3d(558px, 181px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.761129; font-size: 54.3592px; transform: translate3d(368px, 22px, 0px);">❄</p>
+        <p class="snowflake" style="opacity: 0.131627; font-size: 20.1673px; transform: translate3d(228px, 586px, 0px);">❄</p>
+    </div>
+    <!-- START-Tuyết rơi -->
+    <div id="snowflakeContainer">
+        <p class="snowflake">❄</p>
+    </div>
+    <!--END-Tuyết rơi -->
+    </div>
+    <div class="dmsp-banerud">
+        <!-- Top Banner -->
+        <img class="img1" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Mainbanner_web_1920x700.jpg" alt="banner">
+        <div class="uudai" style="grid-template-columns: repeat(5, 1fr); padding:10px;">
+            <!-- Top Buttons -->
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat211.png" alt="Manga"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat212.png" alt="Combo Manga"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat213.png" alt="Series Manga"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat214.png" alt="Light Novel"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat215.png" alt="Other Language"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat216.png" alt="Đam Mỹ"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat217.png" alt="Gợi ý cho bạn"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat218.png" alt="Cùng Mua"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat219.png" alt="Ưu đãi giới hạn"></button>
+            <button style="background-color: #daf1ff;"><img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2024/mangaicon_Manga_icon_nhanvat2110.png" alt="Theo NXB"></button>
+        </div>
+        <br>
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_01.jpg" alt="banner">
+        <br />
+        <!-------------------->
+        <div class="voucher-codes">
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ GIẢM 10K</p>
+                    <p>Đơn hàng mua Manga / Light Novel /<br/>
+                        Đam Mỹ từ 120K</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress15" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText15" class="voucher-text">
+                            <strong id="voucherCount15">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FHS1MANGAT11</p>
+                    <button id="useVoucherButton15" onclick="useVoucher15()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount15 = 25;
+                    const totalVouchers15 = 25;
+                    
+                    function updateVoucherDisplay15() {
+                        const voucherCountElement = document.getElementById('voucherCount15');
+                        const voucherProgress = document.getElementById('voucherProgress15');
+                        const voucherText = document.getElementById('voucherText15');
+                        const useVoucherButton = document.getElementById('useVoucherButton15');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount15;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount15 / totalVouchers15) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount15 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher15() {
+                        if (voucherCount15 > 0) {
+                            voucherCount15--;  // Giảm số lượng voucher
+                            updateVoucherDisplay15();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay15();
+                </script>
+            </div>
+            <div class="voucher">
+                <div class="voucher-info">
+                    <p class="info-vch">MÃ Freeship 15K</p>
+                    <p>Đơn hàng mua Manga / Light Novel /<br/>
+                        Đam Mỹ từ 350K</p>
+                    <div class="voucher-container">
+                        <div class="voucher-bar">
+                            <div id="voucherProgress16" class="voucher-progress"></div>
+                        </div>
+                        <div style="font-size: 0;" id="voucherText16" class="voucher-text">
+                            <strong id="voucherCount16">25</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="voucher-expiry">
+                    <p style="font-size:14px;margin-top:0;">1/11/2024 00:00</p>
+                    <p style="color: rgb(255, 200, 0); font-size: 14px;font-weight: bold;">FSMG1124</p>
+                    <button id="useVoucherButton16" onclick="useVoucher16()" class="expired1" style="background-color: rgb(213, 14, 14);">Copy mã</button>                
+                </div>
+                <script>
+                    // Số lượng voucher ban đầu
+                    let voucherCount16 = 25;
+                    const totalVouchers16 = 25;
+                    
+                    function updateVoucherDisplay16() {
+                        const voucherCountElement = document.getElementById('voucherCount16');
+                        const voucherProgress = document.getElementById('voucherProgress16');
+                        const voucherText = document.getElementById('voucherText16');
+                        const useVoucherButton = document.getElementById('useVoucherButton16');
+            
+                        // Cập nhật số lượng voucher còn lại
+                        voucherCountElement.textContent = voucherCount16;
+            
+                        // Cập nhật thanh tiến độ
+                        const progressWidth = (voucherCount16 / totalVouchers16) * 100;
+                        voucherProgress.style.width = progressWidth + '%';
+            
+                        // Cập nhật thông báo khi hết voucher
+                        if (voucherCount16 <= 0) {
+                            voucherText.textContent = 'Bạn đã hết voucher!';
+                            useVoucherButton.disabled = true;  // Disable button khi hết voucher
+                        }
+                    }
+            
+                    function useVoucher16() {
+                        if (voucherCount16 > 0) {
+                            voucherCount16--;  // Giảm số lượng voucher
+                            updateVoucherDisplay16();  // Cập nhật lại giao diện
+                        }
+                    }
+            
+                    // Gọi hàm cập nhật hiển thị ngay khi trang được tải
+                    updateVoucherDisplay16();
+                </script>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_02.jpg" alt="banner">
+        <br />
+        <!-------------------->
+        <div class="ctncatesp">
+            <div class="titlecatesp">
+                <h1>Manga - Comic Mới</h1>
+            </div>
+            <hr />
+            <div class="spcate-grid">
+                <div class="spcate-card">
+                    <div class="spcate-card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/t/b/tbph-gia-_nh-h_-nam-5.jpg" alt="Gia Đình Hủ Nam - Tập 5 - Tặng Kèm 2 Bookmark Bế Hình+ 1 Standee Giấy">
+                        <p class="spcate-name">Gia Đình Hủ Nam - Tập 5 - Tặng Kèm 2 Bookmark Bế Hình+ 1 Standee Giấy</p>
+                        <p class="pricecate"><span class="pricecate1">67.500 đ</span> <span class="discount">-25%</span></p>
+                        <p class="old-price">75.000 đ</p>
+                        <p class="sold">Đã bán 179 </p>
+                        <nav class="viewaddflss">
+                            <button class="view-add-flss">Thêm giỏ hàng</button>
+                        </nav>
+                    </div>
+                    <div class="spcate-card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/t/b/tbph-th_ng-citrus-5.jpg" alt="Citrus - Tập 5 - Tặng Kèm Hologram SNS Postcard">
+                        <p class="spcate-name">Citrus - Tập 5 - Tặng Kèm Hologram SNS Postcard</p>
+                        <p class="pricecate"><span class="pricecate1">80.100 đ</span> <span class="discount">-25%</span></p>
+                        <p class="old-price">89.000 đ</p>
+                        <p class="sold">Đã bán 179 </p>
+                        <nav class="viewaddflss">
+                            <button class="view-add-flss">Thêm giỏ hàng</button>
+                        </nav>
+                    </div>
+                    <div class="spcate-card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_ban-nang-cap_bia_bookmark_tap-7.jpg" alt="Thám Tử Lừng Danh Conan - Tập 7 - Bản Nâng Cấp - Tặng Kèm Bookmark">
+                        <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 7 - Bản Nâng Cấp - Tặng Kèm Bookmark</p>
+                        <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                        <p class="old-price">55.000 đ</p>
+                        <p class="sold">Đã bán 179 </p>
+                        <nav class="viewaddflss">
+                            <button class="view-add-flss">Thêm giỏ hàng</button>
+                        </nav>
+                    </div>
+                    <div class="spcate-card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/d/r/dragon-ball-super_bia_postcard_tap-21.jpg" alt="Dragon Ball Super - Tập 21 - Đại Chiến Dr. Hedo - Tặng Kèm Postcard">
+                        <p class="spcate-name">Dragon Ball Super - Tập 21 - Đại Chiến Dr. Hedo - Tặng Kèm Postcard</p>
+                        <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                        <p class="old-price">55.000 đ</p>
+                        <p class="sold">Đã bán 179 </p>
+                        <nav class="viewaddflss">
+                            <button class="view-add-flss">Thêm giỏ hàng</button>
+                        </nav>
+                    </div>
+                    <div class="spcate-card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/b/o/boxset-ma-phap-thieu-nu_bong-ma-xam-lang_tang-kem-lot-ly.jpg" alt="Boxset Ma Pháp Thiếu Nữ Madoka Magica - Bóng Ma Xâm Lăng (Bộ 3 Tập) - Tặng Kèm Lót Ly">
+                        <p class="spcate-name">Boxset Ma Pháp Thiếu Nữ Madoka Magica - Bóng Ma Xâm Lăng (Bộ 3 Tập) - Tặng Kèm Lót Ly</p>
+                        <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                        <p class="old-price">55.000 đ</p>
+                        <p class="sold">Đã bán 179 </p>
+                        <nav class="viewaddflss">
+                            <button class="view-add-flss">Thêm giỏ hàng</button>
+                        </nav>
+                    </div>
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6031524378979_9ef397714c53f791b0e3d2525f85bf16.jpg" alt="Citrus - Tập 5 - Bản Đặc Biệt - Tặng Kèm Hologram SNS Postcard + Booklet 16 Trang + Standee Xoay Vui Nhộn Little Tigress">
+                    <p class="spcate-name">Citrus - Tập 5 - Bản Đặc Biệt - Tặng Kèm Hologram SNS Postcard + Booklet 16 Trang + Standee Xoay Vui Nhộn Little Tigress</p>
+                    <p class="pricecate"><span class="pricecate1">112.500 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">150.000 đ</p>
+                    <p class="sold">Đã bán 61 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/k/h/khi-trai-dep-hen-ho_tap-6_tang-bookmark.jpg" alt="Khi “Trai” Đẹp Hẹn Hò - Tập 6 - Tặng Kèm Set 2 Bookmark Ghép Hình">
+                    <p class="spcate-name">Khi “Trai” Đẹp Hẹn Hò - Tập 6 - Tặng Kèm Set 2 Bookmark Ghép Hình</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/s/h/shin-cau-be-but-chi_truyen-dai_nhung-cau-be-kungfu-mi-ramen-dai-chien_bia_tap-19.jpg" alt="Shin - Cậu Bé Bút Chì - Truyện Dài - Tập 19 - Những Cậu Bé Kung Fu - Mì Ramen Đại Chiến">
+                    <p class="spcate-name">Shin - Cậu Bé Bút Chì - Truyện Dài - Tập 19 - Những Cậu Bé Kung Fu - Mì Ramen Đại Chiến</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/d/a/dao-lam-chong-dam_bia_standee_tap-13.jpg" alt="Đạo Làm Chồng Đảm - Tập 13 - Tặng Kèm PVC Standee">
+                    <p class="spcate-name">Đạo Làm Chồng Đảm - Tập 13 - Tặng Kèm PVC Standee</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_07562024_105655_1.jpg" alt="Phù Thủy Và Dã Thú - Tập 5">
+                    <p class="spcate-name">Phù Thủy Và Dã Thú - Tập 5</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/k/h/khi-trai-dep-hen-ho_tap-6_tang-bookmark.jpg" alt="Khi “Trai” Đẹp Hẹn Hò - Tập 6 - Tặng Kèm Set 2 Bookmark Ghép Hình">
+                    <p class="spcate-name">Khi “Trai” Đẹp Hẹn Hò - Tập 6 - Tặng Kèm Set 2 Bookmark Ghép Hình</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/s/h/shin-cau-be-but-chi_truyen-dai_nhung-cau-be-kungfu-mi-ramen-dai-chien_bia_tap-19.jpg" alt="Shin - Cậu Bé Bút Chì - Truyện Dài - Tập 19 - Những Cậu Bé Kung Fu - Mì Ramen Đại Chiến">
+                    <p class="spcate-name">Shin - Cậu Bé Bút Chì - Truyện Dài - Tập 19 - Những Cậu Bé Kung Fu - Mì Ramen Đại Chiến</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/d/a/dao-lam-chong-dam_bia_standee_tap-13.jpg" alt="Đạo Làm Chồng Đảm - Tập 13 - Tặng Kèm PVC Standee">
+                    <p class="spcate-name">Đạo Làm Chồng Đảm - Tập 13 - Tặng Kèm PVC Standee</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_07562024_105655_1.jpg" alt="Phù Thủy Và Dã Thú - Tập 5">
+                    <p class="spcate-name">Phù Thủy Và Dã Thú - Tập 5</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+            </div>
+            <div class="viewmore">
+                <button class="view-more-spcate">Xem Thêm</button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_03.jpg"/>
+        <br />
+        <!-------------------->
+        <div class="ctncatesp">
+            <div class="titlecatesp">
+                <h1>Combo Manga </h1>
+            </div>
+            <hr />
+            <div class="spcate-grid">
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-sieu-quay-teppei_31-cuon_tb-2024.jpg" alt="Combo Manga - Siêu Quậy Teppei: Tập 1-31 (Tái Bản 2024) (Bộ 31 Tập)">
+                    <p class="spcate-name">Combo Manga - Siêu Quậy Teppei: Tập 1-31 (Tái Bản 2024) (Bộ 31 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/5/4/54d55948e7864d1daa0aa097585267c0.png" alt="Combo Manga - Thiên Hà Cạnh Bên: Tập 1 - 6 (Bộ 6 Tập)">
+                    <p class="spcate-name">Combo Manga - Thiên Hà Cạnh Bên: Tập 1 - 6 (Bộ 6 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202411.jpg" alt="Combo Manga - Spy X Family: Tập 1 - 10 (Bộ 10 Tập)">
+                    <p class="spcate-name">Combo Manga - Spy X Family: Tập 1 - 10 (Bộ 10 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202410.jpg" alt="Combo Manga - Soul Eater - Perfect Edition: Tập 1 - 10 (Bộ 10 Tập)">
+                    <p class="spcate-name">Combo Manga - Soul Eater - Perfect Edition: Tập 1 - 10 (Bộ 10 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202409.jpg" alt="Combo Manga - Solo Leveling - Tôi Thăng Cấp Một Mình: Tập 1 - 10 (Bộ 10 Tập)">
+                    <p class="spcate-name">Combo Manga - Solo Leveling - Tôi Thăng Cấp Một Mình: Tập 1 - 10 (Bộ 10 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/7/a/7a7002fc41f04ab5b6ae48bf9361ebcb.jpg" alt="Combo Manga - Asari - Cô Bé Tinh Nghịch: Tập 61 - 70 (Bộ 10 Cuốn)">
+                    <p class="spcate-name">Combo Manga - Asari - Cô Bé Tinh Nghịch: Tập 61 - 70 (Bộ 10 Cuốn)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/9/6/969eaf20e2c348299aade1f299f5e10d.png" alt="Combo Manga - Nụ Hôn Tinh Nghịch: Tập 1 - 12 (Bộ 12 Tập)">
+                    <p class="spcate-name">Combo Manga - Nụ Hôn Tinh Nghịch: Tập 1 - 12 (Bộ 12 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202412.jpg" alt="Combo Manga - Vũ Điệu Rực Lửa - Welcome To The Ballroom: Tập 1 - 10 (Bộ 10 Tập)">
+                    <p class="spcate-name">Combo Manga - Vũ Điệu Rực Lửa - Welcome To The Ballroom: Tập 1 - 10 (Bộ 10 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202408.jpg" alt="Combo Manga - Nhóc Miko! Cô Bé Nhí Nhảnh: Tập 31 - 38 (Bộ 8 Tập)">
+                    <p class="spcate-name">Combo Manga - Nhóc Miko! Cô Bé Nhí Nhảnh: Tập 31 - 38 (Bộ 8 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-0110202407.jpg" alt="Combo Manga - Nhóc Miko! Cô Bé Nhí Nhảnh: Tập 21 - 30 (Bộ 10 Tập)">
+                    <p class="spcate-name">Combo Manga - Nhóc Miko! Cô Bé Nhí Nhảnh: Tập 21 - 30 (Bộ 10 Tập)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+            </div>
+            <div class="viewmore">
+                <button class="view-more-spcate">Xem Thêm</button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_04.jpg"/>
+        <br/>
+        <!-------------------->
+        <div class="ctncatesp">
+            <div class="titlecatesp">
+                <h1>Conan</h1>
+            </div>
+            <hr />
+            <div class="spcate-grid">
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_bia_tap-101.jpg" alt="Thám Tử Lừng Danh Conan - Tập 101">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 101</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan-_-tap-99_2.jpg" alt="Thám Tử Lừng Danh Conan - Tập 99 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 99 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_bia_tap-97.jpg" alt="Thám Tử Lừng Danh Conan - Tập 97 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 97 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_tap-95_tb-2023.jpg" alt="Thám Tử Lừng Danh Conan - Tập 95 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 95 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan---tap-93---tb-2023.jpg" alt="Thám Tử Lừng Danh Conan - Tập 93 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 93 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan---tap-100---ban-thuong_3.jpg" alt="Thám Tử Lừng Danh Conan - Tập 100 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 100 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan-tap-98_3.jpg" alt="Thám Tử Lừng Danh Conan - Tập 98 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 98 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan---tap-96---tb-2023.jpg" alt="Thám Tử Lừng Danh Conan - Tập 96 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 96 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan---tap-94---tb-2023.jpg" alt="Thám Tử Lừng Danh Conan - Tập 94 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 94 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/h/tham-tu-lung-danh-conan_tap-92_tb-2023.jpg" alt="Thám Tử Lừng Danh Conan - Tập 92 (Tái Bản 2023)">
+                    <p class="spcate-name">Thám Tử Lừng Danh Conan - Tập 92 (Tái Bản 2023)</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+            </div>
+            <div class="viewmore">
+                <button class="view-more-spcate">Xem Thêm</button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <div class="ctncatesp">
+            <div class="titlecatesp">
+                <h1>Thiếu Nhi</h1>
+            </div>
+            <hr />
+            <div class="spcate-grid">
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6014704117221_2c2517961ba895250b55c4de99587028.jpg" alt="Phá Đảo Dị Giới Cùng Nữ Thần Không Tín Đồ - Tập 4 - Vu Nữ Chết Chóc Của Tàn Quốc - Bản Đặc Biệt - Tặng Kèm Bookmark + Poster A3 + Móc Khóa">
+                    <p class="spcate-name">Phá Đảo Dị Giới Cùng Nữ Thần Không Tín Đồ - Tập 4 - Vu Nữ Chết Chóc Của Tàn Quốc - Bản Đặc Biệt - Tặng Kèm Bookmark + Poster A3 + Móc Khóa</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6011333697649_fe860eaf4a7d8198e99256f576be0887.jpg" alt="Vì Con Gái Tôi Có Thể Đánh Bại Cả Ma Vương - Tập 8 - Tặng Kèm Bookmark">
+                    <p class="spcate-name">Vì Con Gái Tôi Có Thể Đánh Bại Cả Ma Vương - Tập 8 - Tặng Kèm Bookmark</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/h/o/hoi-chung-tuoi-thanh-xuan_tap-11_ban-pho-thong.jpg" alt="Hội Chứng Tuổi Thanh Xuân - Tập 11 - Tặng Kèm Standee Ivory">
+                    <p class="spcate-name">Hội Chứng Tuổi Thanh Xuân - Tập 11 - Tặng Kèm Standee Ivory</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/a/n/anhmh1_23.jpg" alt="Nàng Idol Đói Bụng Gặp Được Chàng Nội Trợ Đảm Đang - Tập 1 - Tặng Kèm Bookmark Bế In 1 Mặt">
+                    <p class="spcate-name">Nàng Idol Đói Bụng Gặp Được Chàng Nội Trợ Đảm Đang - Tập 1 - Tặng Kèm Bookmark Bế In 1 Mặt</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/5/z5974554014581_715b0b1e67c93e38580d5213ff1f80a7.jpg" alt="Bí Ẩn Lễ Hội Kazegaoka - Đồng Xu 50 Yên - Tặng Kèm Obi + Bookmark">
+                    <p class="spcate-name">Bí Ẩn Lễ Hội Kazegaoka - Đồng Xu 50 Yên - Tặng Kèm Obi + Bookmark</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6014518377617_c0c86063094c446fad14bedb3842bf5e.jpg" alt="Phá Đảo Dị Giới Cùng Nữ Thần Không Tín Đồ - Tập 4 - Vu Nữ Chết Chóc Của Tàn Quốc - Tặng Kèm Bookmark + Poster A3">
+                    <p class="spcate-name">Phá Đảo Dị Giới Cùng Nữ Thần Không Tín Đồ - Tập 4 - Vu Nữ Chết Chóc Của Tàn Quốc - Tặng Kèm Bookmark + Poster A3</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/h/o/hoi-chung-tuoi-thanh-xuan_tap-11_ban-gioi-han.jpg" alt="Hội Chứng Tuổi Thanh Xuân - Tập 11 - Bản Giới Hạn - Tặng Kèm Standee Ivory + Video Card">
+                    <p class="spcate-name">Hội Chứng Tuổi Thanh Xuân - Tập 11 - Bản Giới Hạn - Tặng Kèm Standee Ivory + Video Card</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/b/tbph-1_1.jpg" alt="Nàng Idol Đói Bụng Gặp Được Chàng Nội Trợ Đảm Đang - Tập 1 - Bản Đặc Biệt - Tặng Kèm Bookmark Bế In 1 Mặt + Poster "Millefeuille Star" + Móc Khóa Keyring Otosaki Rei">
+                    <p class="spcate-name">Nàng Idol Đói Bụng Gặp Được Chàng Nội Trợ Đảm Đang - Tập 1 - Bản Đặc Biệt - Tặng Kèm Bookmark Bế In 1 Mặt + Poster "Millefeuille Star" + Móc Khóa Keyring Otosaki Rei</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/5/z5974554031252_3b077de592946b798249e011193f32e4.jpg" alt="Bí Ẩn Lễ Hội Kazegaoka - Đồng Xu 50 Yên - Bản Đặc Biệt - Tặng Kèm Obi + Bookmark + Postcard">
+                    <p class="spcate-name">Bí Ẩn Lễ Hội Kazegaoka - Đồng Xu 50 Yên - Bản Đặc Biệt - Tặng Kèm Obi + Bookmark + Postcard</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/2/3/231024-17.jpg" alt="Chào Mừng Đến Lớp Học Đề Cao Thực Lực - Tập 8 - Bản Đặc Biệt - Tặng Kèm Camera Card">
+                    <p class="spcate-name">Chào Mừng Đến Lớp Học Đề Cao Thực Lực - Tập 8 - Bản Đặc Biệt - Tặng Kèm Camera Card</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+            </div>
+            <div class="viewmore">
+                <button class="view-more-spcate">Xem Thêm</button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_06.jpg"/>
+        <br />
+        <!-------------------->
+        <div class="ctncatesp">
+            <div class="titlecatesp">
+                <h1>Đam Mỹ </h1>
+            </div>
+            <hr />
+            <div class="spcate-grid">
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/t/b/tbph-t_m-bi_t-th_i-gian-_-m_t.jpg" alt="Tạm Biệt Thời Gian Đã Mất - Tặng Kèm Standee PVC + Thiệp Gấp Memories">
+                    <p class="spcate-name">Tạm Biệt Thời Gian Đã Mất - Tặng Kèm Standee PVC + Thiệp Gấp Memories</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/_/n/_nh-ttph-1---heesu-_-l_p-b-_t_p-6_.jpg" alt="Heesu Ở Lớp B - Tập 6 - Tặng Kèm Bookmark Bồi Cứng + Sticker">
+                    <p class="spcate-name">Heesu Ở Lớp B - Tập 6 - Tặng Kèm Bookmark Bồi Cứng + Sticker</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/s/_/s_ch-2.jpg" alt="Chất Dị Ứng Đáng Yêu - Tập 1 - Tặng Kèm Huy Hiệu">
+                    <p class="spcate-name">Chất Dị Ứng Đáng Yêu - Tập 1 - Tặng Kèm Huy Hiệu</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6011333697731_0a10ce31f880c62ca5edbd55e505353d.jpg" alt="Define The Relationship - Định Rõ Mối Quan Hệ - Tập 2 - Bản Đặc Biệt - Bìa Cứng - Tặng Kèm Bookmark + Thiệp Giấy Ngọc Trai Phủ Nhũ + Móc Khóa Chibi">
+                    <p class="spcate-name">Define The Relationship - Định Rõ Mối Quan Hệ - Tập 2 - Bản Đặc Biệt - Bìa Cứng - Tặng Kèm Bookmark + Thiệp Giấy Ngọc Trai Phủ Nhũ + Móc Khóa Chibi</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+                <div class="spcate-card">
+                    <img src="https://cdn0.fahasa.com/media/catalog/product/z/6/z6011333717811_e0617d113ad70bdb3b711fb40e5ed5a2.jpg" alt="Define The Relationship - Định Rõ Mối Quan Hệ - Tập 2 - Bìa Cứng - Tặng Kèm Bookmark">
+                    <p class="spcate-name">Define The Relationship - Định Rõ Mối Quan Hệ - Tập 2 - Bìa Cứng - Tặng Kèm Bookmark</p>
+                    <p class="pricecate"><span class="pricecate1">41.250 đ</span> <span class="discount">-25%</span></p>
+                    <p class="old-price">55.000 đ</p>
+                    <p class="sold">Đã bán 179 </p>
+                    <nav class="viewaddflss">
+                        <button class="view-add-flss">Thêm giỏ hàng</button>
+                    </nav>
+                </div>
+            </div>
+            <div class="viewmore">
+                <button class="view-more-spcate">Xem Thêm</button>
+            </div>
+        </div>
+        <br />
+        <!-------------------->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_LDP_Tagname_07.jpg"/>
+        <br />
+        <!-------------------->
+    </div>
+</body>

@@ -1,0 +1,753 @@
+﻿<link href="../css/categorycss.css" rel="stylesheet" />@{
+    ViewBag.Title = "category3";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dmsp-banerud">
+        <!-- Top Banner -->
+        <img class="img2" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-11-2024/TrangCTT11_1124_Flashsale_Resize_1640x720.png" alt="banner">
+        <!-- Voucher Codes -->
+        <br/>
+        <div class="flashsalemain">
+            <img src="https://cdn0.fahasa.com/media/fahasa_web_image/thunder.jpg">
+            <div class="flash-sale-banner">
+                <div class="countdown">
+                    <p>Kết thúc trong</p>
+                    <div>
+                        <span style="font-size: 20px;background-color: white;color: black;border-radius: 5px;" id="hours">00</span> :
+                        <span style="font-size: 20px;background-color: white;color: black;border-radius: 5px;" id="minutes">00</span> :
+                        <span style="font-size: 20px;background-color: white;color: black;border-radius: 5px;" id="seconds">00</span>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <h2>10:00</h2>
+                    <p>Đang bán</p>
+                    <hr style="width:50px;background-color: white;" />
+                </div>
+                <div class="time-slot">
+                    <h2>12:00</h2>
+                    <p>Sắp bán</p>
+                </div>
+                <div class="time-slot">
+                    <h2>14:00</h2>
+                    <p>Sắp bán</p>
+                </div>
+                <div class="time-slot">
+                    <h2>16:00</h2>
+                    <p>Sắp bán</p>
+                </div>
+                <div class="time-slot">
+                    <h2>18:00</h2>
+                    <p>Sắp bán</p>
+                </div>
+            </div>
+        </div>
+        <div class="dmsp-fls">
+            <button style="border: 2px solid red;" onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/ico_flashsale@3x.png" alt="Tất cả">
+                <p class="dmsp-name">Tất cả</p>
+            </button>
+            <button onclick="window.location.href='category2.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SachThieuNhi_120x120.png" alt="Thiếu nhi">
+                <p class="dmsp-name">Thiếu nhi</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_TamLyKyNang_120x120.png" alt="Tâm lý - Kỹ năng sống">
+                <p class="dmsp-name">Flash sale</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_VanHoc_120x120.png" alt="Văn học">
+                <p class="dmsp-name">Văn học</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_VanHoc_120x120.png" alt="Giáo khoa - Thao khảo">
+                <p class="dmsp-name">Giáo khoa - Thao khảo</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_VanHoc_120x120.png" alt="Sách học ngoại ngữ">
+                <p class="dmsp-name">Sách học ngoại ngữ</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_KinhTe_120x120.png" alt="Kinh Tế">
+                <p class="dmsp-name">Kinh Tế</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SachThieuNhi_120x120.png" alt="Nuôi Dạy Con">
+                <p class="dmsp-name">Nuôi Dạy Con</p>
+            </button>
+            <button onclick="window.location.href='category1.html'">
+                <img src="https://cdn0.fahasa.com/media/fahasa_web_image/icon_XemThem.png" alt="Xem thêm">
+                <p class="dmsp-name">Xem thêm</p>
+            </button>
+        </div>
+        <div class="flss-grid">
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235241015.jpg" alt="Thư Cho Em">
+                <p class="flss-name">Thư Cho Em</p>
+                <p class="priceflss"><span class="priceflss1">70.000 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">170.000 đ</p>
+                <p class="soldflss">Đã bán 6 </p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/h/s/hsp-bia-cung---xuat-in-goc-b1_1.jpg" alt="GHai Số Phận - Bìa Cứng (Tái Bản 2023)">
+                <p class="flss-name">Hai Số Phận - Bìa Cứng (Tái Bản 2023)</p>
+                <p class="priceflss"><span class="priceflss1">173.900 đ</span> <span class="discountflss">-26%</span></p>
+                <p class="old-priceflss">235.000 đ</p>
+                <p class="soldflss">Đã bán 1</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935276442921.jpg" alt="Bộ Máy Tính CASIO FX-880BTG - Màu Hồng + 2 Bút Bi Pilot BP-1RT - Mực Xanh">
+                <p class="flss-name">Bộ Máy Tính CASIO FX-880BTG - Màu Hồng + 2 Bút Bi Pilot BP-1RT - Mực Xanh</p>
+                <p class="priceflss"><span class="priceflss1">698.400 đ</span> <span class="discountflss">-10%</span></p>
+                <p class="old-priceflss">776.000 đ</p>
+                <p class="soldflss">Đã bán 0</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_11579.jpg" alt="Giáo Trình Chuẩn YCT 1 (CD)">
+                <p class="flss-name">Giáo Trình Chuẩn YCT 1 (CD)</p>
+                <p class="priceflss"><span class="priceflss1">103.500 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">138.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5032.jpg" alt="Bách Khoa Dạy Trẻ Học Sớm - Bé 3 Tuổi">
+                <p class="flss-name">Bách Khoa Dạy Trẻ Học Sớm - Bé 3 Tuổi</p>
+                <p class="priceflss"><span class="priceflss1">59.250 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">79.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244085.jpg" alt="Kinh Đại Bát Niết Bàn - Trọn Bộ 4 Tập">
+                <p class="flss-name">Kinh Đại Bát Niết Bàn - Trọn Bộ 4 Tập</p>
+                <p class="priceflss"><span class="priceflss1">828.000 đ</span> <span class="discountflss">-31%</span></p>
+                <p class="old-priceflss">1.200.000 đ</p>
+                <p class="soldflss">Đã bán 3 </p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935251419184.jpg" alt="Trí Tuệ Do Thái (Tái Bản 2022)">
+                <p class="flss-name">Trí Tuệ Do Thái (Tái Bản 2022)</p>
+                <p class="priceflss"><span class="priceflss1">122.900 đ</span> <span class="discountflss">-34%</span></p>
+                <p class="old-priceflss">189.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_236052.jpg" alt="Giáo Trình Chuẩn HSK 4 - Tập 2 - Sách Bài Tập">
+                <p class="flss-name">Giáo Trình Chuẩn HSK 4 - Tập 2 - Sách Bài Tập</p>
+                <p class="priceflss"><span class="priceflss1">118.500 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">158.000 đ</p>
+                <p class="soldflss">Đã bán 11</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/e/ieltswritingjourney-band6_bia1_2.jpg" alt="IELTS Writing Journey - From Basics To Band 6.0">
+                <p class="flss-name">IELTS Writing Journey - From Basics To Band 6.0</p>
+                <p class="priceflss"><span class="priceflss1">146.520 đ</span> <span class="discountflss">-26%</span></p>
+                <p class="old-priceflss">198.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8932000134749_1.jpg" alt="Nếu Biết Trăm Năm Là Hữu Hạn - Ấn Bản Kỉ Niệm 10 Năm Xuất Bản (Tái Bản 2024)">
+                <p class="flss-name">Nếu Biết Trăm Năm Là Hữu Hạn - Ấn Bản Kỉ Niệm 10 Năm Xuất Bản (Tái Bản 2024)</p>
+                <p class="priceflss"><span class="priceflss1">130.380 đ</span> <span class="discountflss">-18%</span></p>
+                <p class="old-priceflss">159.000 đ</p>
+                <p class="soldflss">Đã bán 7</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img style="width:70%;padding-left:10%;" src="https://cdn0.fahasa.com/media/catalog/product/d/i/digital_gold.jpg" alt="Digital Gold - Rủ Nhau Lên Mạng Đào Vàng">
+                <p class="flss-name">Digital Gold - Rủ Nhau Lên Mạng Đào Vàng</p>
+                <p class="priceflss"><span class="priceflss1">149.500 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">299.000 đ</p>
+                <p class="soldflss">Đã bán 6 </p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936178580902.jpg" alt="Đồ Chơi Xếp Hình - Ghép Hình Cơ Bản Khối Lớn Gồm DK81019 (112 Chi Tiết)">
+                <p class="flss-name">Đồ Chơi Xếp Hình - Ghép Hình Cơ Bản Khối Lớn Gồm DK81019 (112 Chi Tiết)</p>
+                <p class="priceflss"><span class="priceflss1">178.750 đ</span> <span class="discountflss">-35%</span></p>
+                <p class="old-priceflss">275.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072957773.jpg" alt="Từ Ngữ Tiếng Pháp Thông Dụng Theo Chủ Đề (Tái Bản 2024)">
+                <p class="flss-name">Từ Ngữ Tiếng Pháp Thông Dụng Theo Chủ Đề (Tái Bản 2024)</p>
+                <p class="priceflss"><span class="priceflss1">59.250 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">79.000 đ</p>
+                <p class="soldflss">Đã bán 10</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_29522024_025243.jpg" alt="3x3 Eyes - Cô Bé Ba Mắt - Tập 16 - Tặng Kèm Card Giấy">
+                <p class="flss-name">3x3 Eyes - Cô Bé Ba Mắt - Tập 16 - Tặng Kèm Card Giấy</p>
+                <p class="priceflss"><span class="priceflss1">81.000 đ</span> <span class="discountflss">-10%</span></p>
+                <p class="old-priceflss">90.000 đ</p>
+                <p class="soldflss">Đã bán 7</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_237646.jpg" alt="Sức Mạnh Tiềm Thức (Tái Bản 2021)">
+                <p class="flss-name"> Sức Mạnh Tiềm Thức (Tái Bản 2021)</p>
+                <p class="priceflss"><span class="priceflss1">96.000 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">128.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_237825.jpg" alt="Di Sản Hồ Chí Minh - Hành Trình Theo Chân Bác (Tái Bản 2021)">
+                <p class="flss-name">Di Sản Hồ Chí Minh - Hành Trình Theo Chân Bác (Tái Bản 2021)</p>
+                <p class="priceflss"><span class="priceflss1">987.500 đ</span> <span class="discountflss">-21%</span></p>
+                <p class="old-priceflss">125.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067605303.jpg" alt="Sổ Tay Kiến Thức Ngữ Văn Trung Học Cơ Sở (2022)">
+                <p class="flss-name">Sổ Tay Kiến Thức Ngữ Văn Trung Học Cơ Sở (2022)</p>
+                <p class="priceflss"><span class="priceflss1">61.200 đ</span> <span class="discountflss">-28%</span></p>
+                <p class="old-priceflss">85.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043940428.jpg" alt="Lão Tử Đạo Đức Kinh">
+                <p class="flss-name">Lão Tử Đạo Đức Kinh</p>
+                <p class="priceflss"><span class="priceflss1">49.000 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">98.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5216.jpg" alt="Đồ Chơi Lắp Ráp Lực Lượng Cảnh Sát - Xe Tuần Tra - Cresta DK81063 (158 Mảnh Ghép)">
+                <p class="flss-name">Đồ Chơi Lắp Ráp Lực Lượng Cảnh Sát - Xe Tuần Tra - Cresta DK81063 (158 Mảnh Ghép)</p>
+                <p class="priceflss"><span class="priceflss1">70.200 đ</span> <span class="discountflss">-35%</span></p>
+                <p class="old-priceflss">108.000 đ</p>
+                <p class="soldflss">Đã bán 3</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/p/h/ph_t-h_nh-_nh-lu_t-murphybia-1.jpg" alt="Định Luật Murphy - Mọi Bí Mật Tâm Lý Thao Túng Cuộc Đời Bạn">
+                <p class="flss-name">Định Luật Murphy - Mọi Bí Mật Tâm Lý Thao Túng Cuộc Đời Bạn</p>
+                <p class="priceflss"><span class="priceflss1">85.680 đ</span> <span class="discountflss">-28%</span></p>
+                <p class="old-priceflss">119.000 đ</p>
+                <p class="soldflss">Đã bán 3</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043358568_1.jpg" alt="Giáo Trình Chuẩn HSK 5 - Tập 1">
+                <p class="flss-name">Giáo Trình Chuẩn HSK 5 - Tập 1</p>
+                <p class="priceflss"><span class="priceflss1">208.500 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">278.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786040403261.jpg" alt="Tiếng Anh 12 Friends Global - Workbook">
+                <p class="flss-name">Tiếng Anh 12 Friends Global - Workbook</p>
+                <p class="priceflss"><span class="priceflss1">75.050 đ</span> <span class="discountflss">-5%</span></p>
+                <p class="old-priceflss">79.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_187373.jpg" alt="Phương Thang Y Học Cổ Truyền">
+                <p class="flss-name">Phương Thang Y Học Cổ Truyền</p>
+                <p class="priceflss"><span class="priceflss1">502.500 đ</span> <span class="discountflss">-33%</span></p>
+                <p class="old-priceflss">750.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212340496.jpg" alt="10 Vạn Câu Hỏi Vì Sao - Khám Phá Thế Giới Đại Dương 2 (Tái Bản 2018)">
+                <p class="flss-name">10 Vạn Câu Hỏi Vì Sao - Khám Phá Thế Giới Đại Dương 2 (Tái Bản 2018)</p>
+                <p class="priceflss"><span class="priceflss1">41.250 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">55.000 đ</p>
+                <p class="soldflss">Đã bán 0</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067607345.jpg" alt="Toán Nâng Cao Và Bồi Dưỡng Học Sinh Giỏi Lớp 1 (Nâng Cao Kiến Thức Ngoài Chương Trình Lên Lớp)">
+                <p class="flss-name">Toán Nâng Cao Và Bồi Dưỡng Học Sinh Giỏi Lớp 1 (Nâng Cao Kiến Thức Ngoài Chương Trình Lên Lớp)</p>
+                <p class="priceflss"><span class="priceflss1">41.040 đ</span> <span class="discountflss">-28%</span></p>
+                <p class="old-priceflss">57.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_133885.jpg" style="width:70%;margin-left: 12.5%;" alt="Quyết Địa Tinh Thư - Tầm Long Bộ 1">
+                <p class="flss-name">Quyết Địa Tinh Thư - Tầm Long Bộ 1</p>
+                <p class="priceflss"><span class="priceflss1">177.550 đ</span> <span class="discountflss">-33%</span></p>
+                <p class="old-priceflss">265.000 đ</p>
+                <p class="soldflss">Đã bán 7</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_220289.jpg" alt="Bộ Sách Tủ Sách Vàng Dành Cho Con: Những Câu Chuyện Cổ Tích Kinh Điển + Truyện Cổ Vòng Quanh Thế Giới (Bộ 2 Cuốn)">
+                <p class="flss-name">Bộ Sách Tủ Sách Vàng Dành Cho Con: Những Câu Chuyện Cổ Tích Kinh Điển + Truyện Cổ Vòng Quanh Thế Giới (Bộ 2 Cuốn)</p>
+                <p class="priceflss"><span class="priceflss1">225.000 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">300.000 đ</p>
+                <p class="soldflss">Đã bán 4</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_51001.jpg" alt="Đồ Chơi Thông Minh Năng Lượng Mặt Trời - Solar Power 2.0 - Gigo Toys #7303 (120 Mảnh Ghép)">
+                <p class="flss-name">Đồ Chơi Thông Minh Năng Lượng Mặt Trời - Solar Power 2.0 - Gigo Toys #7303 (120 Mảnh Ghép)</p>
+                <p class="priceflss"><span class="priceflss1">1.125.000 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">1.500.000 đ</p>
+                <p class="soldflss">Đã bán 8</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935210275400.jpg" alt="Một Phút Với Warren Buffett (Tái Bản 2021)">
+                <p class="flss-name">Một Phút Với Warren Buffett (Tái Bản 2021)</p>
+                <p class="priceflss"><span class="priceflss1">62.300 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">89.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_4975.jpg" alt="50 Bài Học Thú Vị Về Phép Lịch Sự Dành Cho Các Bạn Nhỏ">
+                <p class="flss-name"> 50 Bài Học Thú Vị Về Phép Lịch Sự Dành Cho Các Bạn Nhỏ </p>
+                <p class="priceflss"><span class="priceflss1">63.000 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">90.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936184340477_1.jpg" alt="Cáo, Bò Tót Và Chùm Nho">
+                <p class="flss-name">Cáo, Bò Tót Và Chùm Nho</p>
+                <p class="priceflss"><span class="priceflss1">112.800 đ</span> <span class="discountflss">-40%</span></p>
+                <p class="old-priceflss">80.500 đ</p>
+                <p class="soldflss">Đã bán 8</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067609660.jpg" alt="Nuôi Dưỡng Trí Tuệ Cảm Xúc Cho Trẻ">
+                <p class="flss-name">Nuôi Dưỡng Trí Tuệ Cảm Xúc Cho Trẻ</p>
+                <p class="priceflss"><span class="priceflss1">122.500 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">175.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_200687.jpg" alt="Chiến Tranh Tiền Tệ - Biên Giới Tiền Tệ - Nhân Tố Bí Ẩn Trong Các Cuộc Chiến Kinh Tế (Phần III)">
+                <p class="flss-name">Chiến Tranh Tiền Tệ - Biên Giới Tiền Tệ - Nhân Tố Bí Ẩn Trong Các Cuộc Chiến Kinh Tế (Phần III)</p>
+                <p class="priceflss"><span class="priceflss1">80.000 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">160.000 đ</p>
+                <p class="soldflss">Đã bán 4</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_19833.jpg" alt="Bách Khoa Toàn Thư Giáo Dục Và Phát Triển - Tâm Lý Tính Cách Trẻ 0-6 Tuổi">
+                <p class="flss-name">Bách Khoa Toàn Thư Giáo Dục Và Phát Triển - Tâm Lý Tính Cách Trẻ 0-6 Tuổi</p>
+                <p class="priceflss"><span class="priceflss1">109.500 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">160.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="" alt="Tào Tháo - Thánh Nhân Đê Tiện 5 (Tái Bản 2021)">
+                <p class="flss-name">Tào Tháo - Thánh Nhân Đê Tiện 5 (Tái Bản 2021)</p>
+                <p class="priceflss"><span class="priceflss1">109.500 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">219.000 đ</p>
+                <p class="soldflss">Đã bán 8</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786044828664.jpg" alt="Món Ăn Vị Thuốc">
+                <p class="flss-name">Món Ăn Vị Thuốc</p>
+                <p class="priceflss"><span class="priceflss1">73.700 đ</span> <span class="discountflss">-33%</span></p>
+                <p class="old-priceflss">110.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043055856.jpg" style="width:70%;margin-left: 12.5%;" alt="Sách Tương Tác Thông Minh - Đừng Chạm Vào Động Vật Hoang Dã">
+                <p class="flss-name">Sách Tương Tác Thông Minh - Đừng Chạm Vào Động Vật Hoang Dã</p>
+                <p class="priceflss"><span class="priceflss1">119.250 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">159.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604832.jpg" alt="Vợ Nhặt (Tái Bản 2022)">
+                <p class="flss-name">Vợ Nhặt (Tái Bản 2022)</p>
+                <p class="priceflss"><span class="priceflss1">42.000 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">60.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067609578.jpg" alt="Năm Tuần Lễ Trên Khinh Khí Cầu">
+                <p class="flss-name">Năm Tuần Lễ Trên Khinh Khí Cầu</p>
+                <p class="priceflss"><span class="priceflss1">87.500 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">125.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_28316.jpg" alt="Sống Lũy Tiến">
+                <p class="flss-name">Sống Lũy Tiến</p>
+                <p class="priceflss"><span class="priceflss1">67.500 đ</span> <span class="discountflss">-50%</span></p>
+                <p class="old-priceflss">125.000 đ</p>
+                <p class="soldflss">Đã bán 9</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/flashmagazine/images/page_images/bo_sach_nhung_nguoi_vo_tot_nhung_nguoi_phu_nu_be_nho_bo_2_cuon/2022_11_22_15_56_23_1-390x510.jpg" style="width:70%;margin-left: 12.5%;" alt="Những Người Phụ Nữ Bé Nhỏ">
+                <p class="flss-name">Những Người Phụ Nữ Bé Nhỏ</p>
+                <p class="priceflss"><span class="priceflss1">83.850 đ</span> <span class="discountflss">-35%</span></p>
+                <p class="old-priceflss">129.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212365918.jpg" alt="Bộ Sách Truyện Tranh Song Ngữ Việt-Anh Cho Bé (Bộ 10 Cuốn)">
+                <p class="flss-name">Bộ Sách Truyện Tranh Song Ngữ Việt-Anh Cho Bé (Bộ 10 Cuốn)</p>
+                <p class="priceflss"><span class="priceflss1">112.500 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">150.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935270703905.jpg" alt="Bàn Cờ Lớn">
+                <p class="flss-name">Bàn Cờ Lớn</p>
+                <p class="priceflss"><span class="priceflss1">111.300 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">159.000 đ</p>
+                <p class="soldflss">Đã bán 3</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935280400733.jpg" alt="7 Thói Quen Hiệu Quả - The 7 Habits Of Highly Effective People - Bìa Cứng (Tái Bản 2022)">
+                <p class="flss-name">7 Thói Quen Hiệu Quả - The 7 Habits Of Highly Effective People - Bìa Cứng (Tái Bản 2022)</p>
+                <p class="priceflss"><span class="priceflss1">180.000 đ</span> <span class="discountflss">-28%</span></p>
+                <p class="old-priceflss">250.000 đ</p>
+                <p class="soldflss">Đã bán 5</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/8/8856976000016.jpg" alt="Giấy photo Double A A4/80 gsm">
+                <p class="flss-name">Giấy photo Double A A4/80 gsm</p>
+                <p class="priceflss"><span class="priceflss1">106.950 đ</span> <span class="discountflss">-7%</span></p>
+                <p class="old-priceflss">115.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935244873306.jpg" alt="Đất Nước Gấm Hoa - Atlas Việt Nam">
+                <p class="flss-name">Đất Nước Gấm Hoa - Atlas Việt Nam</p>
+                <p class="priceflss"><span class="priceflss1">287.000 đ</span> <span class="discountflss">-18%</span></p>
+                <p class="old-priceflss">350.000 đ</p>
+                <p class="soldflss">Đã bán 9</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935246914236.jpg" alt="Tự Học Tiếng Trung Cho Người Mới Bắt Đầu (Tái Bản 2023)">
+                <p class="flss-name">Tự Học Tiếng Trung Cho Người Mới Bắt Đầu (Tái Bản 2023)</p>
+                <p class="priceflss"><span class="priceflss1">66.500 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">95.000 đ</p>
+                <p class="soldflss">Đã bán 2 </p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_4518.jpg" alt="100 Bí Ẩn Đáng Kinh Ngạc Về Lịch Sử - 100 Things To Know About History">
+                <p class="flss-name">100 Bí Ẩn Đáng Kinh Ngạc Về Lịch Sử - 100 Things To Know About History</p>
+                <p class="priceflss"><span class="priceflss1">75.000 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">100.000 đ</p>
+                <p class="soldflss">Đã bán 7</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936178581107.jpg" alt="Đồ Chơi Mô Hình Xe Cứu Hỏa DK81039">
+                <p class="flss-name">Đồ Chơi Mô Hình Xe Cứu Hỏa DK81039</p>
+                <p class="priceflss"><span class="priceflss1">117.000 đ</span> <span class="discountflss">-35%</span></p>
+                <p class="old-priceflss">180.000 đ</p>
+                <p class="soldflss">Đã bán 14</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935244874389.jpg" style="width:70%;margin-left: 12.5%;" alt="Lược Sử Nước Việt Bằng Tranh (Tái Bản 2022)">
+                <p class="flss-name">Lược Sử Nước Việt Bằng Tranh (Tái Bản 2022)</p>
+                <p class="priceflss"><span class="priceflss1">114.800 đ</span> <span class="discountflss">-18%</span></p>
+                <p class="old-priceflss">140.000 đ</p>
+                <p class="soldflss">Đã bán 6</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitledthaotungtamly.jpg" alt="Thuật Thao Túng - Góc Tối Ẩn Sau Mỗi Câu Nói">
+                <p class="flss-name">Thuật Thao Túng - Góc Tối Ẩn Sau Mỗi Câu Nói</p>
+                <p class="priceflss"><span class="priceflss1">100.080 đ</span> <span class="discountflss">-28%</span></p>
+                <p class="old-priceflss">139.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043770384.jpg" alt="Giáo Trình Chuẩn YCT 2">
+                <p class="flss-name">Giáo Trình Chuẩn YCT 2</p>
+                <p class="priceflss"><span class="priceflss1">111.000 đ</span> <span class="discountflss">-25%</span></p>
+                <p class="old-priceflss">148.000 đ</p>
+                <p class="soldflss">Đã bán 2</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786044821047.jpg" alt="Ăn Uống Phòng Và Chữa Bệnh - Canh Dưỡng Sinh">
+                <p class="flss-name">Ăn Uống Phòng Và Chữa Bệnh - Canh Dưỡng Sinh</p>
+                <p class="priceflss"><span class="priceflss1">62.310 đ</span> <span class="discountflss">-33%</span></p>
+                <p class="old-priceflss">159.000 đ</p>
+                <p class="soldflss">Đã bán 14</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a_sapiens.jpg" alt="Sapiens - Lược Sử Loài Người - Ấn Bản Bỏ Túi">
+                <p class="flss-name">Sapiens - Lược Sử Loài Người - Ấn Bản Bỏ Túi</p>
+                <p class="priceflss"><span class="priceflss1">111.300 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">159.000 đ</p>
+                <p class="soldflss">Đã bán 3</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+            <div class="flss-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935246937464.jpg" alt="Mind Map English Phrasal Verbs, Collocations And Idioms - Cụm Động Từ, Cụm Từ Và Thành Ngữ Tiếng Anh Qua Sơ Đồ Tư Duy">
+                <p class="flss-name">Mind Map English Phrasal Verbs, Collocations And Idioms - Cụm Động Từ, Cụm Từ Và Thành Ngữ Tiếng Anh Qua Sơ Đồ Tư Duy</p>
+                <p class="priceflss"><span class="priceflss1">117.600 đ</span> <span class="discountflss">-30%</span></p>
+                <p class="old-priceflss">168.000 đ</p>
+                <p class="soldflss">Đã bán 9</p>
+                <nav class="viewaddflss">
+                    <button class="view-add-flss">Xem giỏ hàng</button>
+                </nav>
+            </div>
+        </div>
+        <div class="ctncatespfl">
+            <div class="tabslider-header">
+                <div class="tabslider-title">
+                    <div style="margin-right: 8px;">
+                        <img style="width:70%;" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" class="center" alt="Icon Deal Hot">
+                    </div>
+                    <span>Xu Hướng Mua Sắm</span>
+                </div>
+                <div class="ma-title">
+                    <div class="tabslider-tabs">
+                        <ul class="swiper-horizontal">
+                            <li class="swiper-slide" rel="deal">Xu Hướng Theo Ngày</li>
+                            <li class="swiper-slide" style="color:black; font-weight:200;margin-right: 2rem !important;" rel="km">Sách HOT - Giảm Sốc</li>
+                            <li class="swiper-slide" style="color:black; font-weight:200;margin-right: 33rem !important;" rel="kmnv">Bestseller Ngoại Văn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spcate-grid" style="width: 77%;border-radius: 0px;">
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_56100.jpg" alt="Nước Mỹ Trong Mắt Trump - The United States Of Trump : How The President Really Sees America">
+                <p class="spcate-name">Nước Mỹ Trong Mắt Trump - The United States Of Trump : How The President Really Sees America</p>
+                <p class="pricecate"><span class="pricecate1">166.320 đ</span> <span class="discount">-16%</span></p>
+                <p class="old-price">198.000 đ</p>
+                <p class="soldflss0">Đã bán 32 </p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/1/4/1445-1018_1.jpg" alt="Hoa Học Trò - Số 1445 - Món Quà Lấp Lánh Mùa Hiến Chương Nhà Giáo Việt Nam 20/11">
+                <p class="spcate-name">Hoa Học Trò - Số 1445 - Món Quà Lấp Lánh Mùa Hiến Chương Nhà Giáo Việt Nam 20/11</p>
+                <p class="pricecate"><span class="pricecate1">19.000 đ</span> <span class="discount">-5%</span></p>
+                <p class="old-price">20.000 đ</p>
+                <p class="soldflss0">sắp hết</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/con-_ng-chuy_n-h_a--1.jpg" alt="Con Đường Chuyển Hoá - Sa Môn Thích Pháp Hòa">
+                <p class="spcate-name">Con Đường Chuyển Hoá - Sa Môn Thích Pháp Hòa</p>
+                <p class="pricecate"><span class="pricecate1">150.400 đ</span> <span class="discount">-20%</span></p>
+                <p class="old-price">187.000 đ</p>
+                <p class="soldflss0">Đã bán 36</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-1_65.jpg" alt="Xứ Sở Miên Man - Tặng Kèm Bookmark">
+                <p class="spcate-name">Xứ Sở Miên Man - Tặng Kèm Bookmark</p>
+                <p class="pricecate"><span class="pricecate1">00 đ</span> <span class="discount">-15%</span></p>
+                <p class="old-price">.000 đ</p>
+                <p class="soldflss0">Đã bán 67</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_8906.jpg" alt="Máy Tính Casio FX 580 VN X">
+                <p class="spcate-name">Máy Tính Casio FX 580 VN X</p>
+                <p class="pricecate"><span class="pricecate1">692.100 đ</span> <span class="discount">-10%</span></p>
+                <p class="old-price">769.000 đ</p>
+                <p class="soldflss0">sắp hết </p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/7/a/7a7002fc41f04ab5b6ae48bf9361ebcb.jpg" alt="Combo Manga - Asari - Cô Bé Tinh Nghịch: Tập 61 - 70 (Bộ 10 Cuốn)">
+                <p class="spcate-name">Combo Manga - Asari - Cô Bé Tinh Nghịch: Tập 61 - 70 (Bộ 10 Cuốn)</p>
+                <p class="pricecate"><span class="pricecate1">237.500 đ</span> <span class="discount">-5%</span></p>
+                <p class="old-price">250.000 đ</p>
+                <p class="soldflss0">Đã bán  204</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9780008532819.jpg" alt="Yellowface (International Edition)">
+                <p class="spcate-name">Yellowface (International Edition)</p>
+                <p class="pricecate"><span class="pricecate1">227.700 đ</span> <span class="discount">-10%</span></p>
+                <p class="old-price">253.000 đ</p>
+                <p class="soldflss0">Đã bán 66</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/3/9/3900000245036_2.jpg" alt="Túi Mù Ngẫu Nhiên - Bu Bu BB003 (Mẫu Sản Phẩm Bên Trong Là Ngẫu Nhiên)">
+                <p class="spcate-name">Túi Mù Ngẫu Nhiên - Bu Bu BB003 (Mẫu Sản Phẩm Bên Trong Là Ngẫu Nhiên)</p>
+                <p class="pricecate"><span class="pricecate1">4.680 đ</span> <span class="discount">-22%</span></p>
+                <p class="old-price">6.000 đ</p>
+                <p class="soldflss0">Đã bán 68</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134264082.jpg" alt="Thú Bông Doraemon - Phiên Bản Đặc Biệt Ất Tỵ 2025">
+                <p class="spcate-name">Thú Bông Doraemon - Phiên Bản Đặc Biệt Ất Tỵ 2025</p>
+                <p class="pricecate"><span class="pricecate1">182.700 đ</span> <span class="discount">-13%</span></p>
+                <p class="old-price">210.000 đ</p>
+                <p class="soldflss0">Đã bán 31</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043651591_1.jpg" alt="Lén Nhặt Chuyện Đời">
+                <p class="spcate-name">Lén Nhặt Chuyện Đời</p>
+                <p class="pricecate"><span class="pricecate1">42.500 đ</span> <span class="discount">-50%</span></p>
+                <p class="old-price">85.000 đ</p>
+                <p class="soldflss0">Đã bán 205</p>
+            </div>
+        </div>
+        <div class="viewmore">
+            <button class="view-more-spcate">Xem Thêm</button>
+        </div>
+    </div>
+    <!-------------------->
+    </div>
+</body>
+</html>
+
+
+
+

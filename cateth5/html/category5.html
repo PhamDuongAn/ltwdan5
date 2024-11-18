@@ -1,0 +1,326 @@
+﻿<link href="../css/categorycss.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "category5";
+}
+
+<link href="../csshome/stylehome.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dmsp-banerud" style="width: 100%;">
+        <div class="ctncatespfl" style="border-top-left-radius: 4px;border-top-right-radius: 4px;">
+            <div class="tabslider-header">
+                <div class="tabslider-title">
+                    <div style="margin-right: 8px;">
+                        <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" class="center-img">
+                    </div>
+                    <span style="margin-bottom: 5px;margin-left: 3px;">Sản Phẩm Mới</span>
+                </div>
+                <div class="category-tabs">
+                    <div class="tabslider-tabs tabslider-tabs-gird">
+                        <ul class="tabs girdslider-header-menu-page swiper-container-grid-page swiper-container-horizontal swiper-container-free-mode" style="margin-top: -0.5px;margin-bottom: -0.2px;">
+                            <div class="ts-header-grid swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                            <li onclick="tabslider.clickCategory('all','false')" class="swiper-slide girdslider-menu-item-page active swiper-slide-active" id="all">Tất cả</li>
+                            <li onclick="tabslider.clickCategory('6565','false')" class="swiper-slide girdslider-menu-item-page swiper-slide-next" id="6565"> Sách tham khảo</li>
+                            <li onclick="tabslider.clickCategory('185','false')" class="swiper-slide girdslider-menu-item-page" id="185">Từ điển tiếng Việt</li>
+                            <li onclick="tabslider.clickCategory('3165','false')" class="swiper-slide girdslider-menu-item-page" id="3165">Sách ngoại văn</li>
+                            <li onclick="tabslider.clickCategory('5991','false')" class="swiper-slide girdslider-menu-item-page" id="5991"> Đồ Chơi </li>
+                            <li onclick="tabslider.clickCategory('14','false')" class="swiper-slide girdslider-menu-item-page" id="14"> Thiếu nhi </li>
+                            <li onclick="tabslider.clickCategory('9','false')" class="swiper-slide girdslider-menu-item-page" id="9">
+                                Văn học
+                            </li>
+                            <li onclick="tabslider.clickCategory('11','false')" class="swiper-slide girdslider-menu-item-page" id="11">
+                                Kinh Tế
+                            </li>
+                            <li onclick="tabslider.clickCategory('12','false')" class="swiper-slide girdslider-menu-item-page" id="12">
+                                Tâm lý - Kỹ năng sống
+                            </li>
+                            <li onclick="tabslider.clickCategory('20','false')" class="swiper-slide girdslider-menu-item-page" id="20"> Sách học ngoại ngữ </li>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </ul>
+                </div>
+            </div>
+            <div class="sort-grid-page" style="width: 100%;margin-bottom: -1.2%;">
+                <div class="abc-xyz">
+                    <div class="dropdownfhs-text"><p>Sắp xếp theo :</p></div>
+                    <div class="dropdownfhs-select">
+                        <div class="selectBox">
+                            <span class="selected-order">Mới nhất</span>
+                            <span class="selectArrow-order"></span>
+                            <div class="selectOptions selectOptions-order" style="display: none;">
+                                <span class="selectOption selectOption-order" value="num_orders">Bán Chạy Tuần</span>
+                                <span class="selectOption selectOption-order" value="num_orders_month">Bán Chạy Tháng</span>
+                                <span class="selectOption selectOption-order" value="num_orders_year">Bán Chạy Năm</span>
+                                <span class="selectOption selectOption-order" value="product_view">Nổi Bật Tuần</span>
+                                <span class="selectOption selectOption-order" value="product_view_month">Nổi Bật Tháng</span>
+                                <span class="selectOption selectOption-order" value="product_view_year">Nổi Bật Năm</span>
+                                <span class="selectOption selectOption-order" value="discount_percent">Chiết khấu</span>
+                                <span class="selectOption selectOption-order" value="min_price">Giá Bán</span>
+                                <span class="selectOption selectOption-order hightlight" value="created_at" selected="\&quot;selected\&quot;">Mới nhất</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spcate-grid" style="background-color: whitesmoke;margin-left: -1.8%;margin-bottom: -2% ;border-radius: 0%;">
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-sieu-quay-teppei_31-cuon_tb-2024.jpg" alt="Combo Manga - Siêu Quậy Teppei: Tập 1-31 (Tái Bản 2024) (Bộ 31 Tập)">
+                <p class="spcate-name">Combo Manga - Siêu Quậy Teppei: Tập 1-31 (Tái Bản 2024) (Bộ 31 Tập)</p>
+                <p class="pricecate"><span class="pricecate1">736.250 đ</span> <span class="discount">-5%</span></p>
+                <p class="old-price">775.000 đ</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986014015.jpg" alt="Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 01">
+                <p class="spcate-name">Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 01</p>
+                <p class="pricecate"><span class="pricecate1">38.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986014046.jpg" alt="Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 04">
+                <p class="spcate-name">Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 04</p>
+                <p class="pricecate"><span class="pricecate1">38.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986014022.jpg" alt="Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 02">
+                <p class="spcate-name">Sổ Lò Xo Crazy Cat A5 - Kẻ Ngang - 160 Trang 80gsm - The Sun 02</p>
+                <p class="pricecate"><span class="pricecate1">38.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013858.jpg" alt="Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 01">
+                <p class="spcate-name">Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 01</p>
+                <p class="pricecate"><span class="pricecate1">51.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013889.jpg" alt="Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 04">
+                <p class="spcate-name">Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 04</p>
+                <p class="pricecate"><span class="pricecate1">51.000 đ</span> 
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013865.jpg" alt="Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 02">
+                <p class="spcate-name">Sổ Lò Xo Knitting Patterns A5 - Kẻ Ngang 80gsm - The Sun 02</p>
+                <p class="pricecate"><span class="pricecate1">51.000 đ</span> 
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263887.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Nami">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Nami</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263900.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Sanji">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Sanji</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263948.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Brook">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Brook</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263924.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Robin">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Robin</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263870.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Zoro">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Zoro</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263863.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Luffy">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Luffy</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263917.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Chopper">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Chopper</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936134263894.jpg" alt="Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Usopp">
+                <p class="spcate-name">Sổ Tay Lò Xo One Piece A5 - Kẻ Ngang - 180 Trang 80gsm - Usopp</p>
+                <p class="pricecate"><span class="pricecate1">109.00 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519241.jpg" alt="Đồ Chơi Mô Hình Xe Mô Tô Suzuki GSX-S750 ABS Có Kệ Đứng Tỉ Lệ 1:18 - Maisto 19133/MT39300">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe Mô Tô Suzuki GSX-S750 ABS Có Kệ Đứng Tỉ Lệ 1:18 - Maisto 19133/MT39300</p>
+                <p class="pricecate"><span class="pricecate1">199.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519296.jpg" alt="Đồ Chơi Lắp Ráp Mô Hình Xe Lamborghini Aventador Coupe Tỉ Lệ 1:24 - Maisto 39234/MT39900">
+                <p class="spcate-name">Đồ Chơi Lắp Ráp Mô Hình Xe Lamborghini Aventador Coupe Tỉ Lệ 1:24 - Maisto 39234/MT39900</p>
+                <p class="pricecate"><span class="pricecate1">599.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519357.jpg" alt="Đồ Chơi Mô Hình Xe BMW I8 Chạy Trớn - Maisto 16906/MT21001">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe BMW I8 Chạy Trớn - Maisto 16906/MT21001</p>
+                <p class="pricecate"><span class="pricecate1">159.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935247351474.jpg" alt="Đồ Chơi Lắp Ráp Mô Hình Xe Lamborghini Terzo Millennio Tỉ Lệ 1:24 - Maisto 39287/MT39900">
+                <p class="spcate-name">Đồ Chơi Lắp Ráp Mô Hình Xe Lamborghini Terzo Millennio Tỉ Lệ 1:24 - Maisto 39287/MT39900</p>
+                <p class="pricecate"><span class="pricecate1">599.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935247351481.jpg" alt="Đồ Chơi Lắp Ráp Mô Hình Xe Porsche 911 GT2 RS Tỉ Lệ 1:24 - Maisto 39523/MT39900">
+                <p class="spcate-name">Đồ Chơi Lắp Ráp Mô Hình Xe Porsche 911 GT2 RS Tỉ Lệ 1:24 - Maisto 39523/MT39900</p>
+                <p class="pricecate"><span class="pricecate1">599.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519227.jpg" alt="Đồ Chơi Mô Hình Xe Mô Tô BMW R 1250 GS Có Kệ Đứng Tỉ Lệ 1:18 - Maisto 20117/MT39300">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe Mô Tô BMW R 1250 GS Có Kệ Đứng Tỉ Lệ 1:18 - Maisto 20117/MT39300</p>
+                <p class="pricecate"><span class="pricecate1">199.000 đ</span> 
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519319.jpg" alt="Đồ Chơi Mô Hình Trạm Cứu Hỏa Và Xe Bburago Cứu Hỏa - Bburago 31515/MT31500">
+                <p class="spcate-name">Đồ Chơi Mô Hình Trạm Cứu Hỏa Và Xe Bburago Cứu Hỏa - Bburago 31515/MT31500</p>
+                <p class="pricecate"><span class="pricecate1">329.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519364.jpg" alt="Đồ Chơi Mô Hình Xe Porsche 911 (992) Carrera 4S Chạy Trớn - Maisto 17113/MT21001">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe Porsche 911 (992) Carrera 4S Chạy Trớn - Maisto 17113/MT21001</p>
+                <p class="pricecate"><span class="pricecate1">159.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935247335191.jpg" alt="Đồ Chơi Mô Hình Xe Ferrari LaFerrari Aperta Tỉ Lệ 1:43 - Bburago 36031/18-36100">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe Ferrari LaFerrari Aperta Tỉ Lệ 1:43 - Bburago 36031/18-36100</p>
+                <p class="pricecate"><span class="pricecate1">179.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935247372769.jpg" alt="Đồ Chơi Xe Hơi Trớn 2015 Ford Mustang GT Chạy Trớn - Maisto 13079/MT21001">
+                <p class="spcate-name">Đồ Chơi Xe Hơi Trớn 2015 Ford Mustang GT Chạy Trớn - Maisto 13079/MT21001</p>
+                <p class="pricecate"><span class="pricecate1">159.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935247310426.jpg" alt="Đồ Chơi Mô Hình Máy Bay F/A-22 Raptor - Maisto 9980/MT15088">
+                <p class="spcate-name">Đồ Chơi Mô Hình Máy Bay F/A-22 Raptor - Maisto 9980/MT15088</p>
+                <p class="pricecate"><span class="pricecate1">129.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935337519333.jpg" alt="Đồ Chơi Mô Hình Xe Ferrari R & P-LaFerrari Tỉ Lệ 1:43 - Bburago 31137/18-36100">
+                <p class="spcate-name">Đồ Chơi Mô Hình Xe Ferrari R & P-LaFerrari Tỉ Lệ 1:43 - Bburago 31137/18-36100</p>
+                <p class="pricecate"><span class="pricecate1">179.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_06182024_101851.jpg" alt="Anh Chàng Bảo Mẫu - Tập 23">
+                <p class="spcate-name">Anh Chàng Bảo Mẫu - Tập 23</p>
+                <p class="pricecate"><span class="pricecate1">42.750 đ</span> <span class="discount">-5%</span></p>
+                <p class="old-price">45.000 đ</p>
+                <p class="sold">Đã bán 82 </p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_13592024_085925_1.jpg" alt="Xóm Trọ Yêu Quái - Tập 23">
+                <p class="spcate-name">Xóm Trọ Yêu Quái - Tập 23</p>
+                <p class="pricecate"><span class="pricecate1">47.500 đ</span><span class="discount">-5%</span></p>
+                <p class="old-price">50.000 đ</p>
+                <p class="sold">Đã bán  70</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_07052024_110553.jpg" alt="Saiyuki - Tập 1 - Tặng Kèm Standee Lắp Ghép">
+                <p class="spcate-name">Saiyuki - Tập 1 - Tặng Kèm Standee Lắp Ghép</p>
+                <p class="pricecate"><span class="pricecate1">52.250 đ</span><span class="discount">-5%</span></p>
+                <p class="old-price">55.000 đ</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/5/1/51cg8aaguvl.jpg" alt="Reach Higher 6B - Student Book + Online Practice">
+                <p class="spcate-name">Reach Higher 6B - Student Book + Online Practice</p>
+                <p class="pricecate"><span class="pricecate1">561.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786048480776.jpg" alt="Nhạc Đại Chúng Việt Nam - Chuyển Đổi Xã Hội Giữa Hai Miền Nhớ Quên">
+                <p class="spcate-name">Nhạc Đại Chúng Việt Nam - Chuyển Đổi Xã Hội Giữa Hai Miền Nhớ Quên</p>
+                <p class="pricecate"><span class="pricecate1">320.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043608021.jpg" alt="Ngôi Nhà Bên Kia Hồ">
+                <p class="spcate-name">Ngôi Nhà Bên Kia Hồ</p>
+                <p class="pricecate"><span class="pricecate1">189.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786044028187.jpg" alt="Thần Thoại sisyphus">
+                <p class="spcate-name">Thần Thoại Sisyphus</p>
+                <p class="pricecate"><span class="pricecate1">139.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236436069.jpg" alt="Truyện Kể Cho Bé Trước Giờ Đi Ngủ - Giúp Bé Phát Triển IQ - CQ">
+                <p class="spcate-name">Truyện Kể Cho Bé Trước Giờ Đi Ngủ - Giúp Bé Phát Triển IQ - CQ</p>
+                <p class="pricecate"><span class="pricecate1">78.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236436076.jpg" alt="Truyện Kể Cho Bé Trước Giờ Đi Ngủ - Giúp Bé Phát Triển EQ - SQ">
+                <p class="spcate-name">Truyện Kể Cho Bé Trước Giờ Đi Ngủ - Giúp Bé Phát Triển EQ - SQ</p>
+                <p class="pricecate"><span class="pricecate1">82.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935210310514.jpg" alt="Hồ Chí Minh Tên Người Sống Mãi (Tái Bản 2024)">
+                <p class="spcate-name">Hồ Chí Minh Tên Người Sống Mãi (Tái Bản 2024)</p>
+                <p class="pricecate"><span class="pricecate1">70.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236435949.jpg" alt="Take Note - Toán 5">
+                <p class="spcate-name">Take Note - Toán 5</p>
+                <p class="pricecate"><span class="pricecate1">45.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935210310507.jpg" alt="Bác Hồ Tấm Gương Mẫu Mực Về Sự Giản Dị (Tái Bản 2024)">
+                <p class="spcate-name">Bác Hồ Tấm Gương Mẫu Mực Về Sự Giản Dị (Tái Bản 2024)</p>
+                <p class="pricecate"><span class="pricecate1">55.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/l/i/lich-de-ban-doraemon_mat-bia_mockup.jpg" alt="Lịch Để Bàn Doraemon 2025 - Tặng Kèm Bảng Sticker">
+                <p class="spcate-name">Lịch Để Bàn Doraemon 2025 - Tặng Kèm Bảng Sticker</p>
+                <p class="pricecate"><span class="pricecate1">60.000 đ</span>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935210310484.jpg" alt="Tủ Sách Bác Hồ - Kể Chuyện Bác Hồ (Tái Bản 2024)">
+                <p class="spcate-name">Tủ Sách Bác Hồ - Kể Chuyện Bác Hồ (Tái Bản 2024)</p>
+                <p class="pricecate"><span class="pricecate1">60.000 đ</span> 
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-gcpy4_bebooks.jpg" alt="Ghi Chép Pháp Y - Lật Lại Hồ Sơ Tội Ác">
+                <p class="spcate-name">Ghi Chép Pháp Y - Lật Lại Hồ Sơ Tội Ác</p>
+                <p class="pricecate"><span class="pricecate1">94.500 đ</span> <span class="discount">-10%</span></p>
+                <p class="old-price">105.000 đ</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-3-1_2.jpg" alt="Combo Manga - Hồi Kí Vanitas - Tập 11 - Bản Thường + Bản Đặc Biệt (Bộ 2 Cuốn) - Tặng Kèm 2 Obi + 1 Standee PVC + 1 Brocante + 1 Postcard">
+                <p class="spcate-name">Combo Manga - Hồi Kí Vanitas - Tập 11 - Bản Thường + Bản Đặc Biệt (Bộ 2 Cuốn) - Tặng Kèm 2 Obi + 1 Standee PVC + 1 Brocante + 1 Postcard</p>
+                <p class="pricecate"><span class="pricecate1">110.200 đ</span> <span class="discount">-5%</span></p>
+                <p class="old-price">116.000 đ</p>
+                <p class="sold">Đã bán 51 </p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/c/_/c_ng-b_-b_a-_ch-_p---th_i-v_ng-son-_-l_i-1.jpg" alt="Ếch Ộp - Thời Vàng Son Để Lại - Bản Đặc Biệt - Tặng Kèm Chữ Ký Tác Giả + Bookmark">
+                <p class="spcate-name">Ếch Ộp - Thời Vàng Son Để Lại - Bản Đặc Biệt - Tặng Kèm Chữ Ký Tác Giả + Bookmark</p>
+                <p class="pricecate"><span class="pricecate1">98.100 đ</span> <span class="discount">-10%</span></p>
+                <p class="old-price">109.000 đ</p>
+            </div>
+            <div class="spcate-card">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1-1_5.jpg" alt="Ếch Ộp - Thời Vàng Son Để Lại - Tặng Kèm Bookmark">
+                <p class="spcate-name">Ếch Ộp - Thời Vàng Son Để Lại - Tặng Kèm Bookmark</p>
+                <p class="pricecate"><span class="pricecate1">98.100 đ</span> <span class="discount">-10%</span></p>
+                <p class="old-price">109.000 đ</p>
+            </div>
+        </div>
+        <div class="viewmore">
+            <button class="view-more-spcate">Xem Thêm</button>
+        </div>
+    </div>
+    <!-------------------->
+    </div>
+</body>
+</html>
+
+
+
+
